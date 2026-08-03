@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+
+class SectionTitle extends StatelessWidget {
+  final String title;
+    final String? subtitle;
+      final Widget? trailing;
+
+        const SectionTitle({
+            super.key,
+                required this.title,
+                    this.subtitle,
+                        this.trailing,
+                          });
+
+                            @override
+                              Widget build(BuildContext context) {
+                                  return Row(
+                                        crossAxisAlignment: CrossAxisAlignment.end,
+                                              children: [
+                                                      Expanded(
+                                                                child: Column(
+                                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                        children: [
+                                                                                                      Text(
+                                                                                                                      title,
+                                                                                                                                      style: const TextStyle(
+                                                                                                                                                        color: Colors.white,
+                                                                                                                                                                          fontSize: 28,
+                                                                                                                                                                                            fontWeight: FontWeight.bold,
+                                                                                                                                                                                                              letterSpacing: -0.5,
+                                                                                                                                                                                                                              ),
+                                                                                                                                                                                                                                            ),
+                                                                                                                                                                                                                                                          if (subtitle != null) ...[
+                                                                                                                                                                                                                                                                          const SizedBox(height: 6),
+                                                                                                                                                                                                                                                                                          Text(
+                                                                                                                                                                                                                                                                                                            subtitle!,
+                                                                                                                                                                                                                                                                                                                              style: TextStyle(
+                                                                                                                                                                                                                                                                                                                                                  color: Colors.white.withOpacity(0.70),
+                                                                                                                                                                                                                                                                                                                                                                      fontSize: 15,
+                                                                                                                                                                                                                                                                                                                                                                                          height: 1.4,
+                                                                                                                                                                                                                                                                                                                                                                                                            ),
+                                                                                                                                                                                                                                                                                                                                                                                                                            ),
+                                                                                                                                                                                                                                                                                                                                                                                                                                          ],
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      ],
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                ),
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ),
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                if (trailing != null) trailing!,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ],
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }

@@ -1,0 +1,83 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :gradle
+WARNING: Unsupported Kotlin plugin version.
+The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.0` that might work differently than in the requested version `2.2.20`.
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+The message received from the daemon indicates that the daemon has disappeared.
+Build request sent: Build{id=dc88063c-083c-4951-bac4-c3a0874c77cc, currentDir=/home/codespace/luminest/android}
+Attempting to read last messages from the daemon log...
+Daemon pid: 580412
+  log file: /home/codespace/.gradle/daemon/9.1.0/daemon-580412.out.log
+----- Last 20 lines from daemon log file - daemon-580412.out.log -----
+2026-08-03T20:44:58.258+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=dc88063c-083c-4951-bac4-c3a0874c77cc, currentDir=/home/codespace/luminest/android} with connection: socket connection from /127.0.0.1:38309 to /127.0.0.1:36240.
+2026-08-03T20:44:58.260+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=dc88063c-083c-4951-bac4-c3a0874c77cc, currentDir=/home/codespace/luminest/android}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:38309 to /127.0.0.1:36240] after 0.0023000000000000004 minutes of idle
+2026-08-03T20:44:58.260+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [c628d302-9997-4c57-906e-a5c1babc6463 port:38309, addresses:[localhost/127.0.0.1]]
+2026-08-03T20:44:58.261+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [c628d302-9997-4c57-906e-a5c1babc6463 port:38309, addresses:[localhost/127.0.0.1]]
+2026-08-03T20:44:58.261+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-08-03T20:44:58.262+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-08-03T20:44:58.262+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-08-03T20:44:58.263+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-08-03T20:44:58.263+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-08-03T20:44:58.264+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=dc88063c-083c-4951-bac4-c3a0874c77cc, currentDir=/home/codespace/luminest/android}. Dispatching build started information...
+2026-08-03T20:44:58.265+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@1a07d5f1
+2026-08-03T20:44:58.266+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [IRBRC, PATH, CODESPACES, CODESPACE_VSCODE_FOLDER, PROMPT_DIRTRIM, VSCODE_PYTHON_AUTOACTIVATE_GUARD, ANDROID_HOME, GITHUB_API_URL, COLORTERM, DOCKER_BUILDKIT, SDKMAN_DIR, VSCODE_GIT_ASKPASS_NODE, rvm_version, PWD, TERM_PROGRAM_VERSION, NVS_DIR, CONDA_SCRIPT, SDKMAN_BROKER_API, HUGO_ROOT, NVM_CD_FLAGS, LESSOPEN, RVM_PATH, SDKMAN_CANDIDATES_API, MY_RUBY_HOME, GITHUB_CODESPACE_TOKEN, ContainerVersion, rvm_path, RAILS_DEVELOPMENT_HOSTS, GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN, NVM_SYMLINK_CURRENT, PYTHON_ROOT, GITHUB_USER, SHLVL, DOTNET_RUNNING_IN_CONTAINER, GITHUB_SERVER_URL, JAVA_ROOT, JAVA_HOME, GIT_EDITOR, TERM, FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION, GRADLE_HOME, NVM_INC, VSCODE_IPC_HOOK_CLI, GITHUB_REPOSITORY, NUGET_XMLDOC_MODE, RUBY_HOME, NODE_ROOT, ENABLE_DYNAMIC_INSTALL, TERM_PROGRAM, DOTNET_SKIP_FIRST_TIME_EXPERIENCE, PHP_ROOT, RUBY_ROOT, GOROOT, JUPYTERLAB_PATH, GEM_PATH, binary_input, NVM_BIN, NVS_USE_XZ, DOTNET_USE_POLLING_FILE_WATCHER, VSCODE_GIT_IPC_HANDLE, PIPX_HOME, HUGO_DIR, MAVEN_ROOT, MAVEN_HOME, COPILOT_DEBUG_NONCE, ORYX_PREFER_USER_INSTALLED_SDKS, GIT_ASKPASS, SHELL, GITHUB_TOKEN, GITHUB_GRAPHQL_URL, GOPATH, OLDPWD, DEBIAN_FLAVOR, GEM_HOME, PHP_PATH, DOTNET_ROOT, RUBY_VERSION, DEBUGINFOD_URLS, LS_COLORS, ORYX_ENV_TYPE, PIPX_BIN_DIR, BROWSER, LESSCLOSE, rvm_bin_path, CLOUDENV_ENVIRONMENT_ID, zip_output, ORYX_SDK_STORAGE_BASE_URL, rvm_prefix, LANG, VSCODE_GIT_ASKPASS_MAIN, INTERNAL_VSCS_TARGET_URL, CONDA_DIR, VSCODE_GIT_ASKPASS_EXTRA_ARGS, SDKMAN_CANDIDATES_DIR, NVS_HOME, NVS_ROOT, NVM_DIR, NVS_OS, SHELL_LOGGED_IN, PYTHONIOENCODING, PYTHON_PATH, SDKMAN_PLATFORM, ANDROID_SDK_ROOT, USER, ORYX_DIR, HOSTNAME, CODESPACE_NAME, HOME, NPM_GLOBAL, DYNAMIC_INSTALL_ROOT_DIR]
+2026-08-03T20:44:58.274+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-08-03T20:44:58.275+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 580412). The daemon log file: /home/codespace/.gradle/daemon/9.1.0/daemon-580412.out.log
+2026-08-03T20:44:58.277+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 8 GiB]
+2026-08-03T20:44:58.282+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-08-03T20:44:58.282+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f98cced8-ddc9-4050-9848-3e86cb598403,javaHome=/usr/local/sdkman/candidates/java/17.0.12-tem,javaVersion=17,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/codespace/.gradle/daemon,pid=580412,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=4G,-XX:ReservedCodeCacheSize=512m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx8G,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+WARNING: Unsupported Kotlin plugin version.
+The `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `2.2.0` that might work differently than in the requested version `2.2.20`.
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.----- End of the daemon log -----
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Gradle build daemon disappeared unexpectedly (it may have been killed or may have crashed)
+
+* Try:
+> Run with --info or --debug option to get more log output.
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+* Exception is:
+org.gradle.launcher.daemon.client.DaemonDisappearedException: Gradle build daemon disappeared unexpectedly (it may have been killed or may have crashed)
+	at org.gradle.launcher.daemon.client.DaemonClient.handleDaemonDisappearance(DaemonClient.java:283)
+	at org.gradle.launcher.daemon.client.DaemonClient.monitorBuild(DaemonClient.java:256)
+	at org.gradle.launcher.daemon.client.DaemonClient.executeBuild(DaemonClient.java:209)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:172)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:97)
+	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:56)
+	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:167)
+	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:377)
+	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:341)
+	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:74)
+	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:30)
+	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:97)
+	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:40)
+	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:50)
+	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:27)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:489)
+	at org.gradle.launcher.Main.doAction(Main.java:35)
+	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:72)
+	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:39)
+	at org.gradle.launcher.GradleMain.main(GradleMain.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.wrapper.BootstrapMainStarter.start(BootstrapMainStarter.java:30)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+
+> Task :gradle:compileKotlin
